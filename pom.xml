@@ -1,0 +1,35 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>jaxws.rt.charset.example</groupId>
+    <artifactId>jaxws-rt-charset-example</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>JAX WS RT Charset Example</name>
+
+    <modules>
+        <module>server</module>
+        <module>client</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <jaxws-rt.version>2.3.0</jaxws-rt.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.sun.xml.ws</groupId>
+                <artifactId>jaxws-rt</artifactId>
+                <version>${jaxws-rt.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
