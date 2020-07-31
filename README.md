@@ -1,6 +1,6 @@
 # jaxws-rt-charset-example
 
-Guia passo-a-passo
+Passos para reproduzir
 
 1. Abrir o SoapUI;
 2. Importar o arquivo "Charset-Mock-soapui-project.xml" disponível na raiz desse projeto;
